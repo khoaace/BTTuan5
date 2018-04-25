@@ -25,7 +25,7 @@ module.exports.calc = function (first_Num,second_Num,method_calc1) {
                 result_calc = Number(first_Num) * Number(second_Num);
                 break;
             case "divi": {
-                if(second_Num =="0")
+                if(second_Num.trim() =="0")
                     return "Không thể chia cho 0.";
                 else
                 result_calc = Number(first_Num) / Number(second_Num);
