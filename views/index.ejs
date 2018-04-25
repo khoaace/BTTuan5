@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Be Tap Tinh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="title">Bé tập tính</div><br>
+    <form name="basic_calc" action="/" method="post">
+        <div class="row">
+            <div class="col-sm-3" style="text-align: center;padding: 0;">
+                <p>Số thứ 1 </p>
+                <p>Số thứ 2 </p>
+                <p> Kết quả</p>
+            </div>
+            <div class="col-sm-3" style="padding: 0;">
+                <input type="text" name="firstNum" value="<%=firstNum%>" style="margin-bottom: 8px;">
+                <input type="text" name="secondNum" value="<%=secondNum%>" style="margin-bottom: 8px;">
+                <input type="text" name="result" value="<%=result%>" style="margin-bottom: 8px;"  readonly>
+            </div>
+            <div class="col-sm-3" style="padding: 0;">
+                <p style="margin-bottom: 13px;">
+                    <input type="radio" name="method_calc" value="add"> Cộng
+                    <input type="radio" name="method_calc" value="sub"> Trừ</p>
+                <p style="margin-bottom: 13px;">
+                    <input type="radio" name="method_calc" value="mult"> Nhân
+                    <input type="radio" name="method_calc" value="divi"> Chia</p>
+                <input type="submit" value="Tính">
+            </div>
+        </div>
+    </form><br>
+    <div class="last-row">
+        <span>Thông báo : <%=notify%></span>
+        <span id="Notify" style="color: red;"></span><span id="Notify_Done" style="color: green;"></span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.col-sm-3{
+    font-size: 20px;
+}
+.col-sm-1
+{
+    font-size: 20px;
+}
+.last-row{
+    font-size: 20px;
+    clear: both;
+    border-top: 2px dashed black;
+    padding-left: 90px;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 2px dashed black;
+}
+.container{
+    border: 2px dashed black;
+    background-color: #ccc
+}
